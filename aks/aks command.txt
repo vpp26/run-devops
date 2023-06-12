@@ -108,3 +108,9 @@ kubectl apply -f .\aks\
 Clean All AKS and Azure Resources
 
 az group delete --name myResourceGroup --yes --no-wait
+
+manuallt scale 
+kubectl scale --replicas=3 deployment.apps/shoppingclient-deployment 
+
+get hpa for autoscale
+kubectl get hpa
